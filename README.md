@@ -66,3 +66,11 @@ Alternatively, setup [tailscale](https://tailscale.com/) for access from outside
 
 - Mara X logs cleared daily
 - Influx DB retention policy set to 2 weeks, see [here](./config/influxdb/influxdb-init.iql)
+
+## Change log
+
+- added a restart: always to all services (now it will start on reboot)
+- updated the dashboard
+- eddited regex filter to allow different lelit software versions
+- added more install instructions
+- added 1second refresh rate to grafana
