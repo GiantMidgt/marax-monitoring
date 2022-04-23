@@ -1,6 +1,6 @@
 # Mara X Monitoring
 
-![Granfana Preview](./preview.png "Granfana Preview")
+![Granfana Preview](./preview_new.png "Granfana Preview")
 
 Capture temperature data from a Lelit Mara X espresso machine via a serial connection and persist in a database and expose via grafana.
 
