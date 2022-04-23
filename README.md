@@ -12,7 +12,7 @@ All credit to the author of this [post](https://www.reddit.com/r/espresso/commen
 
 ## How to run
 
-### 1. Start and install everything
+### 1. install then start everything
 
 1.1 Install Docker-compose on the Pi:
 https://pumpingco.de/blog/setup-your-raspberry-pi-for-docker-and-docker-compose/
