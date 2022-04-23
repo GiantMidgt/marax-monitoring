@@ -3,12 +3,14 @@ version: "3"
 services:
   marax-adapter:
     build: ./containers/marax-adapter
+    restart: always
     devices:
       - /dev/ttyUSB0:/dev/ttyUSB0
     volumes:
       - marax-storage:/var/log/marax
   telegraf:
     image: telegraf:1.17
+    restart: always
     depends_on:
       - influxdb
       - marax-adapter
@@ -17,6 +19,7 @@ services:
       - marax-storage:/var/log/marax
   influxdb:
     image: influxdb:1.8
+    restart: always
     ports:
       - 8086:8086
     volumes:
@@ -24,6 +27,7 @@ services:
       - ./config/influxdb:/docker-entrypoint-initdb.d
   grafana:
     image: grafana/grafana:7.5.3
+    restart: always
     ports:
       - 3000:3000
     depends_on:
