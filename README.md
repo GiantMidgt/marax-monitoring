@@ -12,15 +12,32 @@ All credit to the author of this [post](https://www.reddit.com/r/espresso/commen
 
 ## How to run
 
-### 1. Start everything running
+### 1. Start and install everything
 
-Run grafana / influxDB / ingestion via docker-compose with the following in a terminal
+1.1 Install Docker-compose on the Pi:
+https://pumpingco.de/blog/setup-your-raspberry-pi-for-docker-and-docker-compose/
+
+1.2 Install Git to download directories from github:
+https://linuxize.com/post/how-to-install-git-on-raspberry-pi/
+
+1.3 Download these files onto the pi:
+```shell
+git clone https://github.com/GiantMidgt/marax-monitoring.git
+```
+
+1.4 change directory to the download:
+
+```shell
+cd marax-monitoring
+```
+
+1.5 Run grafana / influxDB / ingestion via docker-compose with the following in a terminal
 
 ```shell
 [sudo] docker-compose up --build
 ```
 
-This can now be backgrounded (`Ctrl-z`)
+1.6 This can now be backgrounded (`Ctrl-z`)
 
 ### 2. View Graphs
 
